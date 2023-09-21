@@ -1,0 +1,131 @@
+les types de donnes : 
+
+
+Entier :
+reel
+caractere
+chaine de caractere
+booleen
+
+
+Contante Nom_Constante = valeur
+
+EX : 
+     Constante Pi = 3.14
+     Constante nbr_Mois = 12
+     Constante nom_Ecole = "EST"
+
+        variable
+
+        Variable Nom_Variable : Type
+
+EX :
+     
+     Variable num_Etudiant : entier
+     Variable note : reel
+     Variable prenom : chaine de caracteres
+     Variable admis : booleen
+
+===================affectation=================================================
+
+l'affectation est une operation qui consiste a atteibuer a une variable :
+* soit une valeur particuliere
+* soit une valeur contenue dans une autre variable
+* soit une valeur calculee a l'aide d'operateurs arithmetiques  
+  elle est representee par une fleche orientee a gauche
+
+  EX:  
+  =========================================================================================
+
+                  Algorithme #5 : Ecrire - Lire 
+
+ 'instruction ecrire permet d'afficher la valeur d'une expression sur un peripherique de sortie 
+ (ecran).
+
+    syntaxe :
+             
+        Ecrire(variable)
+        Ecrire("Message")
+        Ecrire("Message",variable)
+
+    Exemples :
+
+        Ecrire(A) 
+         signifie affiche sur l'ecran le contenu de la variable A
+        Ecrire("Maroc") 
+         signifie affiche sur l'ecran le message suivant : Maroc
+        Ecrire("A=",A)
+
+ L'instruvtion Lire permet de domander a l'utilisateur de fournir des information.
+ chaque information donnee par l'utilisateur est stockee dans une variable (attention au type !)    
+
+   syntaxe :
+
+        Lire(variable1)
+        Lire(variable1,variable2,....)
+
+
+    Exemples : 
+     
+        Lire(X) 
+        Lire(nom,prenom,age) 
+
+------------------------exercice-----------------------------------------------
+
+il ya les variables suivant 
+x = 150
+y = 100
+z = "DH"
+
+
+instruction                                   resultat
+ 
+ Ecrire("hello world !")                  hello world !
+ Ecrire(X)                                150
+ Ecrire("z")                              z
+ Ecrire(x*2)                              300
+ Ecrire("prix:",x+y+z)                    Prix = 250DH
+ 
+nous voulons ecrire un Algorithme qui calcule l'aire d'un cercle.
+debut 
+
+ variable Rayon , Surface : reel 
+ Constante Pi = 3.14
+ Ecrire("veuillez entrer la valeurdu rayon de cercel:")
+ Lire("Rayon")
+ Surface = Rayon * rayon * Pi
+ Ecrire ("L'aire de cercelest :",Surface)
+
+fin
+----------------------------------------------------------------------------------
+ donnees => Algorithme => resultat
+
+
+                  Algorithme #7 : Les commentaires 
+
+                        % commentaire %
+
+   Exemple :
+
+    % declaration de la variable pays %
+
+ variable PAYS : chaine de caracteres
+
+    % affectation de la valeur Maroc a la variable pays %
+    pays <= "Maroc"         
+                   ===================================================================
+
+               Algorithme #8 : Expressions arithmétiques
+                    + - * / ^ div mod 
+                                
+            A <= 10/3         = 3.33
+            B <= 10 div 3     = 3
+            C <= 10 mod 3     = 1
+            D <= 10^3         = 10^3 = 10^3 = 1000           
+
+==================================================================================================================
+                          Algorithme #9 : Expressions de comparaison 
+
+     les operateurs de comparaison usuels sont : > , = , < , <= , >= , <>                      
+
+                    
