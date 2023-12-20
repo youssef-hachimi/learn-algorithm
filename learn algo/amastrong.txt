@@ -1,0 +1,18 @@
+algo amastrong
+var CP,N,A,R,S :entier
+debut
+cp <== 0; n<-- 101;
+tant que cp <4 fire 
+A <-- N;S<-- 0;
+tant que A<>0 fire
+R <-- A mod 10 ;
+s <-- r^3;
+a <-- a/10;S
+FIN TANT QUE 
+si s = n alors 
+ecrire n est un nmbr amstrong
+cp <-- cp+1;
+fin si
+n <-- N + 1
+fin tante que 
+fin
