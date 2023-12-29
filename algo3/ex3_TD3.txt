@@ -1,0 +1,29 @@
+Exercice3 :
+Algorithme Ex3TD3;
+Tableau T(50):Entier;
+Variable N,i,rech,idm,deb,fin,pos,arret:Entier;
+Début
+  Ecrire('Donner du tableau:'); Liret(N);
+  Ecrire('Lire un tableau trié:');
+	Pour i<--1 à N pas 1
+	  Lire(T(i));
+	Finpour
+  Ecrire('Afficher le tableau:');
+	Pour i1 à N pas 1
+	  Ecrire(T(i));
+	Finpour
+  Ecrire('Donner la valeur à rechercher:'); Lire(rech);
+ deb <-- 1; fin <-- N;arret <-- 0;
+	Tant que deb <= fin et arret = 0 faire
+  idm <-- (deb+fin)/2;
+  Si T(idm)=rech alors posidm; arret1;
+   Sinon
+	Si rech<T(idm) alors finidm-1;
+   Sinon debidm+1;
+  Finsi
+   Finsi
+  FinTantque
+	Si arret=1 alors Ecrire(rech,' existe à la position : ',pos);
+     Sinon Ecrire(rech,' est introuvable');
+	Finsi
+Fin

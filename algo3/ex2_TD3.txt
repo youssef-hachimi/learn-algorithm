@@ -1,0 +1,26 @@
+Exercice2 : 
+Algorithme Ex2TD3;
+Tableau T(50):Entier;
+Variable i,n,p,N:Entier;
+Début
+  Ecrire('Entrer la taille du tableau:');
+  Lire(N);
+  Ecrire('Lire le tableau:');
+	Pour i <-- 1 à N pas 1
+	 Lire(T(i));
+	Finpour
+  Ecrire('Afficher le tableau:');
+ Pour i1 à N pas 1
+	  Ecrire(T(i));
+ Finpour
+	n<--0; p<--0;
+ Pour i <-- 1 à N pas 1
+	Si T(i)<0 alors
+	  n<--n+1;
+	 Sinon
+	  p<--p+1;
+	Finsi
+ Finpour
+  Ecrire('Résultat des positifs est: ',p);
+  Ecrire('Résultat des négatifs est:',n);
+Fin

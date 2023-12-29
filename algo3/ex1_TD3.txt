@@ -1,0 +1,30 @@
+Exercice1 : 
+Algorithme Ex1TD3;
+Tableau T(50):Entier;
+Variable i,min,max,moy,s,N:Entier;
+Début
+  Ecrire('Entrer la taille du tableau:');
+  Lire(N);
+  Ecrire('Lire le tableau:');
+	Pour ia1 à N pas 1
+      Lire(T(i));
+	Finpour
+  Ecrire('Afficher le tableau:');
+	Pour ia 1 à N pas 1
+	  Ecrire(T(i));
+	Finpour
+min <-- T(1); max <-- T(1); s <-- T(1);
+	Pour i <-- 2 à N pas 1
+	Si T(i)<min alors
+	  min <-- T(i);
+	Finsi
+	Si T(i)>max alors
+      max<--T(i);
+	Finsi
+	 s<--s+T(i);
+	Finpour
+  Ecrire('Maximum: ',max);
+  Ecrire('Minimum: ',min);
+	moy <-- s/N;
+  Ecrire('Moyenne: ',moy);
+Fin
