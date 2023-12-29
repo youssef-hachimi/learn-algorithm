@@ -1,0 +1,34 @@
+Exercice2 :
+Analyse :
+Données d’entrée : a, b
+Données de sortie : x
+
+Traitement :
+si a≠0 alors c = -b/a
+si a=0 et b=0 alors Ensemble IR
+si a=0 et b≠0 alors Ensemble vide
+
+Conception : (1)
+Algorithme Ex2TD1;
+Variable a, b, x: Réel;
+Début
+  Ecrire (‘Entrer deux réels:’);
+  Lire (a,b);
+	si a<>0 alors x=-b/a ; Ecrire (‘x: ’,x); Finsi
+	si a=0 et b=0 alors Ecrire (‘Ensemble IR’); Finsi
+	si a=0 et b<>0 alors Ecrire (‘Ensemble vide’); Finsi
+Fin
+
+Conception : (2)
+Algorithme Ex2TD1;
+Variable a, b, x: Réel;
+Début
+  Ecrire (‘Entrer deux réels:’);
+  Lire (a,b);
+	Si a<>0 alors x = -b/a ; Ecrire (‘x: ’,x);
+		sinon
+		Si b=0 alors Ecrire (‘Ensemble IR’);
+		sinon Ecrire (‘Ensemble vide’);
+		Finsi
+	Finsi
+Fin

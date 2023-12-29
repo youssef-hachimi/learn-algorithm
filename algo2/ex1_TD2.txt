@@ -1,0 +1,18 @@
+Exercice1 : 
+Algorithme Fibonacci;
+Variable A,B,C,N,cp:Entier;
+Début
+  Ecrire('Enter la valeur de N:');
+  Lire(N);
+   Si N=1 ou N=2 alors
+		A <-- 1;
+	Sinon
+		B <-- 1; C <-- 1;
+	  pour cp<-3 à N pas 1
+	A <-- B+C;
+	B <--A;
+	C <-- B;
+	finpour
+   finsi
+  Ecrire('Un = ',A);
+Fin

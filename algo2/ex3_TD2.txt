@@ -1,0 +1,29 @@
+R<-A%10;
+S<-S+R^3;
+A<-A/10;
+	Fintantque
+	Si S=N alors
+      Ecrire(N,'Nombre AMSTRONG');
+    Sinon
+  Ecrire(N,'Pas un nombre AMSTRONG');
+ Finsi
+Fin
+----------------------------------------Partie 2 ---------------------------------------------------------
+Algorithme AMSTRONG;
+Variable A,N,S,R,cp:Entier;
+Début
+  N<-101;cp<-0;
+	Tantque cp<4 faire
+   A<-N; S<-0;
+	Tantque A<>0 faire
+   R<-A%10;
+	S<-S+R^3;
+	A<-A/10;
+	Fintantque
+	Si S=N alors
+  Ecrire(N,'Nombre AMSTRONG');
+cp<-cp+1;
+   Finsi
+N<-N+1;
+  Fintantque
+Fin

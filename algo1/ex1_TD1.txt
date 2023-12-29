@@ -1,0 +1,27 @@
+Exercice1 :
+Analyse :
+Données d’entrée : a, b, c
+Données de sortie : max, min, med
+
+Traitement :
+	si a>=b et b>=c alors max=a et min=c et med=b
+	si a>=c et c>=b alors max=a et min=b et med=c
+	si b>=a et a>=c alors max=b et min=c et med=a
+	si b>=c et c>=a alors max=b et min=a et med=c
+	si c>=a et a>=b alors max=c et min=b et med=a
+	si c>=b et b>=a alors max=c et min=a et med=b
+
+Conception :
+Algorithme Ex1TD1;
+Variable a, b, c, max, min, med : Entier;
+Début
+   Ecrire (‘Entrer trois entiers:’);
+   Lire (a,b,c);
+	si a>=b et b>=c alors max=a ; min=c ; med=b; Finsi
+	si a>=c et c>=b alors max=a ; min=b ; med=c; Finsi
+	si b>=a et a>=c alors max=b ; min=c ; med=a; Finsi
+	si b>=c et c>=a alors max=b ; min=a ; med=c; Finsi
+	si c>=a et a>=b alors max=c ; min=b ; med=a; Finsi
+	si c>=b et b>=a alors max=c ; min=a ; med=b; Finsi
+   Ecrire (‘Max: ’,max, ‘Min: ’,min, ‘Med: ’,med);
+Fin

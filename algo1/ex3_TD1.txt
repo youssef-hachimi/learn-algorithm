@@ -1,0 +1,30 @@
+si n=9 alors Afficher ‘neuf’
+
+Conception : (1)
+Algorithme Ex3TD1;
+Variable n : Entier;
+Début
+  Ecrire (‘Entrer un entier:’);
+  Lire (n);
+	si n=0 alors Ecrire (‘zéro’); Finsi
+	si n=1 alors Ecrire (‘un’); Finsi
+	si n=2 alors Ecrire (‘deux’); Finsi
+	si n=3 alors Ecrire (‘trois’); Finsi
+	si n=4 alors Ecrire (‘quatre’); Finsi
+	...
+	si n=9 alors Ecrire (‘neuf’); Finsi
+Fin
+
+Conception : (2)
+Algorithme Ex3TD1;
+Variable n : Entier;
+Début
+  Ecrire (‘Entrer un entier:’);
+  Lire (n);
+	Selon que n vaut
+	cas 0 : Ecrire (‘zéro’);
+	...
+	cas 9 : Ecrire (‘neuf’);
+	autrement : Ecrire (‘erreur’);
+	Fselon
+Fin

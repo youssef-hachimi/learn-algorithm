@@ -1,0 +1,15 @@
+Exercice 2 :
+Algorithme Ex2TD2;
+Variable IB,S,R,i:Entier;
+Début
+  Ecrire('Entrer une information binaire:');
+  Lire(IB);
+   S <-- 0; i<-- 0;
+	Tant que IB<>0 faire
+	R <--IB%10;
+	S <-- S + R*2^i;
+	i <-- i+1;
+	IB <-- IB/10;
+	Fintantque
+  Ecrire('Information Décimale:',S);
+Fin
