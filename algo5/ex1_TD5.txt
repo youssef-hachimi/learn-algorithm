@@ -1,0 +1,29 @@
+Algorithme Parfaits;
+Variable N,r:Entier;
+fonction sommediv(A:Entier):Entier;
+variable i,S:Entier;
+Début
+S<-0;
+Pour i<-1 à A/2 pas 1
+Si A%i=0 alors
+S<-S+i;
+Finsi
+Finpour
+sommediv<-S;
+Fin;
+fonction parfait(B:Entier):Entier;
+variable res,parf:Entier;
+Début
+res<-sommediv(B);
+Si res=B alors parf<-1;
+Sinon parf<-0;
+Finsi
+parfait<-parf;
+Fin;
+Début
+Pour N<-2 à 999 pas 1
+r<-parfait(N);
+Si r=1 alors Ecrire(N,' est un nombre parfait');
+Finsi
+Finpour
+Fin
