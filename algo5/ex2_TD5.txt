@@ -1,0 +1,53 @@
+Algorithme Ex2TD5;
+Variable N1,N2,N3,N4,moy,res:réel;
+Fonction lecture():Réel;
+Variable A:Réel;
+Début
+Ecrire('Entrer un réel:');
+Lire(A);
+lecture<-A;
+Fin;
+Fonction moyenne(A:Réel;B:Réel;C:Réel;D:Réel):Réel;
+Variable M:réel;
+Début
+M<-(A+B+C+D)/4;
+moyenne<-M;
+Fin;
+Fonction validation(A:Réel;B:Réel;C:Réel;D:Réel):Entier;
+Variable c1:Réel;
+c2,r:Entier;
+Début
+c1<-moyenne(A,B,C,D);
+Si A>=7 et B>=7 et C>=7 et D>=7 alors
+c2<-1;
+Sinon
+c2<-0;
+Finsi
+Si c1>=10 et c2=1 alors
+r<-1;
+Sinon
+r<-0;
+Finsi
+validation<-r;
+Fin;
+Procédure mention(E:Réel);
+Début
+Si E>=10 et E<12 alors Ecrire('Passable') Finsi;
+Si E>=12 et E<14 alors Ecrire('Assez Bien') Finsi;
+Si E>=14 et E<16 alors Ecrire('Bien') Finsi;
+Si E>=16 alors Ecrire('Très Bien') Finsi;
+Fin;
+Début
+Ecrire('Donner quatre notes:');
+N1<-lecture();
+N2<-lecture();
+N3<-lecture();
+N4<-lecture();
+moy<-moyenne(N1,N2,N3,N4);
+res<-validation(N1,N2,N3,N4);
+Si res=1 alors
+Ecrire('Moyenne est: ',moy);mention(moy);
+Sinon
+Ecrire('Semestre n est pas validé');
+Finsi
+Fin
